@@ -1,4 +1,4 @@
-package main;
+package core;
 
 import org.pircbotx.Configuration;
 import org.pircbotx.PircBotX;
