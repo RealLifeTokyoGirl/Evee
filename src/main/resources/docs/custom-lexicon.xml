@@ -1,0 +1,28 @@
+<lexicon>
+<word>
+  <base>anime</base>
+  <category>noun</category>
+  <id>c000</id>
+  <plural>anime</plural>
+</word>
+<word>
+  <base>baka</base>
+  <category>noun</category>
+  <id>c001</id>
+</word>
+<word>
+  <base>faggot</base>
+  <category>noun</category>
+  <id>c002</id>
+</word>
+<word>
+  <base>fgt</base>
+  <category>noun</category>
+  <id>c003</id>
+</word>
+<word>
+  <base>shitpost</base>
+  <category>verb</category>
+  <id>c004</id>
+</word>
+</lexicon>

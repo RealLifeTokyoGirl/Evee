@@ -1,0 +1,5 @@
+<notifications>
+	<notification targetUser="example">
+		<message from="example" timestamp="example"/>
+	</notification>
+</notifications>
