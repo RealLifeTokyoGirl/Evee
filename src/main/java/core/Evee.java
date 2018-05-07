@@ -64,9 +64,9 @@ public class Evee extends ListenerAdapter {
 			}
 			
 			// Returns the scoreboard, or increments it [.score (name +-number)]
-			else if (message.startsWith(".score")) {
-				Score.score(event);
-			}
+			//else if (message.startsWith(".score")) {
+			//	Score.score(event);
+			//}
 			
 			// Stores, returns, or adds/deletes quotes [.q/.quote name<>(add/del) (number/search term/quote to add)]
 			else if (message.startsWith(".q ") || message.startsWith(".quote ")) {
@@ -76,6 +76,10 @@ public class Evee extends ListenerAdapter {
 			// Rolls dice and returns a result [.roll [dice]d[sides] (repeat z)]
 			else if (message.startsWith(".roll ")) {
 				Dice.roll(event);
+			}
+			
+			else if (message.startsWith(".source ")) {
+				event.respondChannel("E-Eh?! You want to see my source code?! P-Please don't stare too hard okay... https://github.com/RealLifeTokyoGirl/Evee");
 			}
 			
 			// Reactive

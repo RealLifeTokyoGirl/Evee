@@ -1,28 +1,28 @@
-package plugins;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Scanner;
-
-import org.pircbotx.hooks.events.MessageEvent;
-
-/**
- * Methods: 
- * score(MessageEvent event); [.score (name +|-number)] - fetches the current score, and allows the user to increment the values
-**/
-
-public class Score {
-	
-	
-	public static void score(MessageEvent event) {
-		
-		
-		
+//package plugins;
+//
+//import java.io.BufferedWriter;
+//import java.io.File;
+//import java.io.FileNotFoundException;
+//import java.io.FileWriter;
+//import java.io.IOException;
+//import java.util.Scanner;
+//
+//import org.pircbotx.hooks.events.MessageEvent;
+//
+///**
+// * Methods: 
+// * score(MessageEvent event); [.score (name +|-number)] - fetches the current score, and allows the user to increment the values
+//**/
+//
+//public class Score {
+//	
+//	
+//	public static void score(MessageEvent event) {
+//		
+//		
+//		
 //		try {
-//			File file = new File("docs/score.txt");
+//			File file = new File("src/main/resources/docs/score.txt");
 //			Scanner	scan = new Scanner(file);
 //			String[] names = scan.nextLine().split(", ");
 //			scan.close();
@@ -88,6 +88,6 @@ public class Score {
 //		} catch (FileNotFoundException e) {
 //			e.printStackTrace();
 //		}
-	}
-	
-}
+//	}
+//	
+//}

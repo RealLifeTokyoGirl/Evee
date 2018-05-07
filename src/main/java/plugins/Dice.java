@@ -35,7 +35,7 @@ public class Dice {
 				repeats = Integer.parseInt(args[2]);
 			}
 			if (dice > 32 || sides > 100000 || repeats > 16) {
-				event.respondChannel("Hey!! One of your inputs is waaay too big! Please keep your arguments reasonable and avoid spamming!");
+				event.respondChannel("Hey!! One of your inputs is waaay too big! Please keep your requests reasonable to avoid spamming!");
 				return;
 			}
 			

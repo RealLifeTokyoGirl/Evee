@@ -20,7 +20,6 @@ import org.pircbotx.hooks.events.MessageEvent;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 import xmlparser.ParseXML;
@@ -34,12 +33,6 @@ public class Notify {
 	
 	//private variables
 	private static Document xmldoc = ParseXML.buildDoc("src/main/resources/docs/notifications.xml");
-	
-	
-	public static void main(String[] args){
-		String timeStamp = new SimpleDateFormat("EEEE, MMMM d 'at' HH:mm z").format(new Date());
-		System.out.println(timeStamp);
-	}
 	
 	
 	public static void setNotification(MessageEvent event) {
@@ -82,7 +75,7 @@ public class Notify {
 			transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
 			transformer.setOutputProperty(OutputKeys.INDENT, "no");
 			Source input = new DOMSource(xmldoc);
-			Result output = new StreamResult(new File("docs/notifications.xml"));
+			Result output = new StreamResult(new File("src/main/resources/docs/notifications.xml"));
 			
 			StringWriter writer = new StringWriter();
 			transformer.transform(input, new StreamResult(writer));
